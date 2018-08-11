@@ -1,0 +1,1 @@
+The easiest way to install shell integration is to select the iTerm2>Install Shell Integration menu item. It will download and run a shell script as described below. You should do this on every host you ssh to as well as your local machine. The following shells are supported: tcsh, zsh, bash, and fish 2.3 or later. Contributions for other shells are most welcome.
