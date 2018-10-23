@@ -1389,6 +1389,9 @@ fontDigit24x31:
 	.ascii	"tftId1\000"
 .LASF0:
 	.ascii	"unsigned int\000"
+.LASF16:
+	.ascii	"/Users/franky/Desktop/github/WaterBed/program/displ"
+	.ascii	"ay\000"
 .LASF8:
 	.ascii	"long long unsigned int\000"
 .LASF4:
@@ -1413,7 +1416,4 @@ fontDigit24x31:
 	.ascii	"uint16_t\000"
 .LASF3:
 	.ascii	"short int\000"
-.LASF16:
-	.ascii	"/Users/franky/Desktop/winprj/posix/\346\260\264\345"
-	.ascii	"\272\212\000"
 	.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q2-update) 7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907]"

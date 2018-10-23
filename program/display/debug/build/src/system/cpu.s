@@ -1745,8 +1745,6 @@ irqDetach:
 	.ascii	"wwdgrstf\000"
 .LASF24:
 	.ascii	"pllrdy\000"
-.LASF44:
-	.ascii	"adc2\000"
 .LASF8:
 	.ascii	"long long int\000"
 .LASF2:
@@ -1763,6 +1761,8 @@ irqDetach:
 	.ascii	"pllon\000"
 .LASF16:
 	.ascii	"hsirdy\000"
+.LASF68:
+	.ascii	"stackIdle\000"
 .LASF59:
 	.ascii	"sftrstf\000"
 .LASF35:
@@ -1862,9 +1862,8 @@ irqDetach:
 	.ascii	"spi1\000"
 .LASF43:
 	.ascii	"adc1\000"
-.LASF80:
-	.ascii	"/Users/franky/Desktop/winprj/posix/\346\260\264\345"
-	.ascii	"\272\212\000"
+.LASF44:
+	.ascii	"adc2\000"
 .LASF49:
 	.ascii	"adc3\000"
 .LASF12:
@@ -1877,8 +1876,9 @@ irqDetach:
 	.ascii	"uint8_t\000"
 .LASF13:
 	.ascii	"prftbs\000"
-.LASF68:
-	.ascii	"stackIdle\000"
+.LASF80:
+	.ascii	"/Users/franky/Desktop/github/WaterBed/program/displ"
+	.ascii	"ay\000"
 .LASF51:
 	.ascii	"tim10\000"
 .LASF52:

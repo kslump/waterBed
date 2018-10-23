@@ -1993,6 +1993,9 @@ commands:
 	.ascii	"newLine\000"
 .LASF19:
 	.ascii	"hex2str\000"
+.LASF27:
+	.ascii	"/Users/franky/Desktop/github/WaterBed/program/displ"
+	.ascii	"ay\000"
 .LASF11:
 	.ascii	"__gpioCrH\000"
 .LASF20:
@@ -2014,9 +2017,6 @@ commands:
 	.ascii	"ions -fno-builtin -ffreestanding\000"
 .LASF3:
 	.ascii	"short int\000"
-.LASF27:
-	.ascii	"/Users/franky/Desktop/github/WaterBed/\346\260\264\345"
-	.ascii	"\272\212\000"
 .LASF0:
 	.ascii	"unsigned int\000"
 .LASF9:

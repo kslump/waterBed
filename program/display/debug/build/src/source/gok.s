@@ -55733,6 +55733,9 @@ bmpGokon:
 	.ascii	"anch revision 261907] -mcpu=cortex-m3 -mthumb -gdwa"
 	.ascii	"rf-2 -Os -std=gnu11 -ffunction-sections -fdata-sect"
 	.ascii	"ions -fno-builtin -ffreestanding\000"
+.LASF15:
+	.ascii	"/Users/franky/Desktop/github/WaterBed/program/displ"
+	.ascii	"ay\000"
 .LASF0:
 	.ascii	"unsigned int\000"
 .LASF8:
@@ -55759,7 +55762,4 @@ bmpGokon:
 	.ascii	"src/source/gok.c\000"
 .LASF3:
 	.ascii	"short int\000"
-.LASF15:
-	.ascii	"/Users/franky/Desktop/winprj/posix/\346\260\264\345"
-	.ascii	"\272\212\000"
 	.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q2-update) 7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907]"

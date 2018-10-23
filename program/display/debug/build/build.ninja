@@ -16,7 +16,7 @@ rule so
 rule oa
   command = ${toolchain}ar rcs $out $in
 rule ae
-  command = ${toolchain}ld -Bstatic --gc-sections -Map debug/build/debug.map -Tlds/stm32f103xc.ld -o $out --start-group $in --end-group
+  command = ${toolchain}ld -Bstatic --gc-sections -Map debug/build/debug.map -Tlib/stm32f103xc.ld -o $out --start-group $in --end-group
 rule axf
   command = cp $in $out
 rule dis

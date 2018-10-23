@@ -4427,9 +4427,6 @@ tftBmpDraw:
 	.ascii	"TftRect\000"
 .LASF38:
 	.ascii	"tftPinRead\000"
-.LASF43:
-	.ascii	"/Users/franky/Desktop/github/WaterBed/\346\260\264\345"
-	.ascii	"\272\212\000"
 .LASF31:
 	.ascii	"lcdClear\000"
 .LASF41:
@@ -4459,4 +4456,7 @@ tftBmpDraw:
 	.ascii	"tftSetWindow\000"
 .LASF4:
 	.ascii	"uint8_t\000"
+.LASF43:
+	.ascii	"/Users/franky/Desktop/github/WaterBed/program/displ"
+	.ascii	"ay\000"
 	.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2018-q2-update) 7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907]"
