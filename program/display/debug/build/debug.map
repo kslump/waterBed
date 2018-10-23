@@ -1,0 +1,415 @@
+Archive member included to satisfy reference by file (symbol)
+
+debug/build/src/system/system.a(startup.o)
+                              (expReset)
+debug/build/src/system/system.a(cpu.o)
+                              debug/build/src/system/system.a(startup.o) (cpuInit)
+debug/build/src/source/source.a(begin.o)
+                              debug/build/src/system/system.a(startup.o) (main)
+debug/build/src/source/source.a(gok.o)
+                              debug/build/src/source/source.a(begin.o) (bmpGokon)
+debug/build/src/driver/driver.a(r61509v.o)
+                              debug/build/src/source/source.a(begin.o) (tftInit)
+debug/build/src/driver/driver.a(font.o)
+                              debug/build/src/driver/driver.a(r61509v.o) (fontDigit24x31)
+
+Allocating common symbols
+Common symbol       size              file
+
+tftId1              0x2               debug/build/src/source/source.a(begin.o)
+tftId3              0x2               debug/build/src/source/source.a(begin.o)
+stackIdle           0x60              debug/build/src/system/system.a(cpu.o)
+stackMain           0x200             debug/build/src/system/system.a(cpu.o)
+tftId2              0x2               debug/build/src/source/source.a(begin.o)
+kvarThread          0x40              debug/build/src/system/system.a(cpu.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 debug/build/src/system/system.a(startup.o)
+ .data          0x0000000000000000        0x0 debug/build/src/system/system.a(startup.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/system/system.a(startup.o)
+ .text          0x0000000000000000        0x0 debug/build/src/system/system.a(cpu.o)
+ .data          0x0000000000000000        0x0 debug/build/src/system/system.a(cpu.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/system/system.a(cpu.o)
+ .text.irqAttach
+                0x0000000000000000       0x28 debug/build/src/system/system.a(cpu.o)
+ .text.irqDetach
+                0x0000000000000000       0x18 debug/build/src/system/system.a(cpu.o)
+ .text          0x0000000000000000        0x0 debug/build/src/source/source.a(begin.o)
+ .data          0x0000000000000000        0x0 debug/build/src/source/source.a(begin.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/source/source.a(begin.o)
+ .text          0x0000000000000000        0x0 debug/build/src/source/source.a(gok.o)
+ .data          0x0000000000000000        0x0 debug/build/src/source/source.a(gok.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/source/source.a(gok.o)
+ .text          0x0000000000000000        0x0 debug/build/src/driver/driver.a(r61509v.o)
+ .data          0x0000000000000000        0x0 debug/build/src/driver/driver.a(r61509v.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/driver/driver.a(r61509v.o)
+ .text.lcdClear2
+                0x0000000000000000       0x50 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftReadMem
+                0x0000000000000000       0x14 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftWriteMem
+                0x0000000000000000       0x14 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftCharDraw
+                0x0000000000000000       0x5c debug/build/src/driver/driver.a(r61509v.o)
+ .text          0x0000000000000000        0x0 debug/build/src/driver/driver.a(font.o)
+ .data          0x0000000000000000        0x0 debug/build/src/driver/driver.a(font.o)
+ .bss           0x0000000000000000        0x0 debug/build/src/driver/driver.a(font.o)
+ .rodata.fontDigit24x31
+                0x0000000000000000      0x45c debug/build/src/driver/driver.a(font.o)
+ .debug_info    0x0000000000000000       0xdd debug/build/src/driver/driver.a(font.o)
+ .debug_abbrev  0x0000000000000000       0x73 debug/build/src/driver/driver.a(font.o)
+ .debug_aranges
+                0x0000000000000000       0x18 debug/build/src/driver/driver.a(font.o)
+ .debug_line    0x0000000000000000       0x4f debug/build/src/driver/driver.a(font.o)
+ .debug_str     0x0000000000000000      0x19d debug/build/src/driver/driver.a(font.o)
+ .comment       0x0000000000000000       0x80 debug/build/src/driver/driver.a(font.o)
+ .ARM.attributes
+                0x0000000000000000       0x33 debug/build/src/driver/driver.a(font.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE             0x0000000008000000 0x0000000000020000 xr
+DATA             0x0000000020000000 0x0000000000005000 xw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000008000000     0xe4f4
+ *(.startup)
+ .startup       0x0000000008000000      0x314 debug/build/src/system/system.a(startup.o)
+                0x0000000008000000                tableVector
+                0x0000000008000130                expReset
+                0x000000000800017e                expPendSV
+                0x00000000080001c2                expSysTick
+                0x0000000008000250                procIdle
+                0x0000000008000256                kthreadInit
+                0x00000000080002a2                kthreadSleep
+                0x00000000080002d8                irqUsbHpCanTx
+                0x00000000080002d8                irqFsmc
+                0x00000000080002d8                irqAdc1Adc2
+                0x00000000080002d8                irqExti15to10
+                0x00000000080002d8                irqDma1C6
+                0x00000000080002d8                irqTim8Brk
+                0x00000000080002d8                irqDefault
+                0x00000000080002d8                expDebugMon
+                0x00000000080002d8                irqDma1C5
+                0x00000000080002d8                irqUsart1
+                0x00000000080002d8                irqTim4
+                0x00000000080002d8                irqDma2C4C5
+                0x00000000080002d8                irqExti2
+                0x00000000080002d8                irqWwdg
+                0x00000000080002d8                irqDma2C2
+                0x00000000080002d8                irqPvd
+                0x00000000080002d8                irqSpi3
+                0x00000000080002d8                irqDma1C2
+                0x00000000080002d8                irqTim1TrgCom
+                0x00000000080002d8                expSVCall
+                0x00000000080002d8                irqTim8Cc
+                0x00000000080002d8                irqI2c1Ev
+                0x00000000080002d8                expNmi
+                0x00000000080002d8                irqRcc
+                0x00000000080002d8                irqDma1C1
+                0x00000000080002d8                irqTim8Up
+                0x00000000080002d8                irqUsbLpCanRx0
+                0x00000000080002d8                irqTim5
+                0x00000000080002d8                irqDma1C7
+                0x00000000080002d8                irqExti0
+                0x00000000080002d8                expHardFault
+                0x00000000080002d8                irqSdio
+                0x00000000080002d8                irqExti4
+                0x00000000080002d8                irqDma2C1
+                0x00000000080002d8                irqUsbWakeup
+                0x00000000080002d8                irqRtcAlarm
+                0x00000000080002d8                irqSpi1
+                0x00000000080002d8                irqTim3
+                0x00000000080002d8                irqExti3
+                0x00000000080002d8                irqI2c2Ev
+                0x00000000080002d8                irqI2c2Er
+                0x00000000080002d8                expUsageFault
+                0x00000000080002d8                irqTim7
+                0x00000000080002d8                irqTim2
+                0x00000000080002d8                irqAdc3
+                0x00000000080002d8                irqRtc
+                0x00000000080002d8                irqTim1Up
+                0x00000000080002d8                irqTim8TrgCom
+                0x00000000080002d8                irqTim1Cc
+                0x00000000080002d8                irqDma1C3
+                0x00000000080002d8                irqUsart2
+                0x00000000080002d8                irqUart4
+                0x00000000080002d8                irqExti1
+                0x00000000080002d8                irqTim1Brk
+                0x00000000080002d8                irqDma1C4
+                0x00000000080002d8                irqExti9to5
+                0x00000000080002d8                expBusFault
+                0x00000000080002d8                irqTim6
+                0x00000000080002d8                irqTamper
+                0x00000000080002d8                irqI2c1Er
+                0x00000000080002d8                irqUsart3
+                0x00000000080002d8                irqDma2C3
+                0x00000000080002d8                irqUart5
+                0x00000000080002d8                irqCanSce
+                0x00000000080002d8                expMemManage
+                0x00000000080002d8                irqFlash
+                0x00000000080002d8                irqCanRx1
+                0x00000000080002d8                irqSpi2
+                0x0000000008000314                . = ALIGN (0x4)
+ *(.text*)
+ .text.cpuInit  0x0000000008000314      0x11c debug/build/src/system/system.a(cpu.o)
+                0x0000000008000314                cpuInit
+ .text.delay    0x0000000008000430       0x30 debug/build/src/system/system.a(cpu.o)
+                0x0000000008000430                delay
+ .text.swoPutChar
+                0x0000000008000460       0x20 debug/build/src/source/source.a(begin.o)
+                0x0000000008000460                swoPutChar
+ .text.swoPutString
+                0x0000000008000480       0x12 debug/build/src/source/source.a(begin.o)
+                0x0000000008000480                swoPutString
+ .text.hex2char
+                0x0000000008000492       0x12 debug/build/src/source/source.a(begin.o)
+                0x0000000008000492                hex2char
+ .text.hex2str  0x00000000080004a4       0x4c debug/build/src/source/source.a(begin.o)
+                0x00000000080004a4                hex2str
+ .text.newLine  0x00000000080004f0       0x14 debug/build/src/source/source.a(begin.o)
+                0x00000000080004f0                newLine
+ .text.startup.main
+                0x0000000008000504       0x94 debug/build/src/source/source.a(begin.o)
+                0x0000000008000504                main
+ .text.pinInit  0x0000000008000598      0x1e8 debug/build/src/source/source.a(begin.o)
+                0x0000000008000598                pinInit
+ .text.tftWrite
+                0x0000000008000780       0x9c debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftRegWrite
+                0x000000000800081c       0x10 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftDatWrite
+                0x000000000800082c       0x10 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftPinRead
+                0x000000000800083c       0xd4 debug/build/src/driver/driver.a(r61509v.o)
+                0x000000000800083c                tftPinRead
+ .text.tftPinWrite
+                0x0000000008000910       0x90 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000910                tftPinWrite
+ .text.tftRead  0x00000000080009a0       0xc4 debug/build/src/driver/driver.a(r61509v.o)
+ .text.tftSetPos
+                0x0000000008000a64       0x46 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000a64                tftSetPos
+ .text.tftSetWindow
+                0x0000000008000aaa       0x56 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000aaa                tftSetWindow
+ .text.lcdClear
+                0x0000000008000b00       0x22 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000b00                lcdClear
+ *fill*         0x0000000008000b22        0x2 
+ .text.tftInit  0x0000000008000b24       0x74 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000b24                tftInit
+ .text.tftReadId
+                0x0000000008000b98       0x48 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000b98                tftReadId
+ .text.tftBmpDraw
+                0x0000000008000be0       0x40 debug/build/src/driver/driver.a(r61509v.o)
+                0x0000000008000be0                tftBmpDraw
+                0x0000000008000c20                . = ALIGN (0x4)
+ *(.rodata*)
+ .rodata.commands
+                0x0000000008000c20       0x12 debug/build/src/source/source.a(begin.o)
+ .rodata.bmpGokon
+                0x0000000008000c32     0xd8c0 debug/build/src/source/source.a(gok.o)
+                0x0000000008000c32                bmpGokon
+                0x000000000800e4f4                . = ALIGN (0x4)
+ *fill*         0x000000000800e4f2        0x2 
+                0x000000000800e4f4                _text_end = .
+
+.glue_7         0x000000000800e4f4        0x0
+ .glue_7        0x000000000800e4f4        0x0 linker stubs
+
+.glue_7t        0x000000000800e4f4        0x0
+ .glue_7t       0x000000000800e4f4        0x0 linker stubs
+
+.vfp11_veneer   0x000000000800e4f4        0x0
+ .vfp11_veneer  0x000000000800e4f4        0x0 linker stubs
+
+.v4_bx          0x000000000800e4f4        0x0
+ .v4_bx         0x000000000800e4f4        0x0 linker stubs
+
+.iplt           0x000000000800e4f4        0x0
+ .iplt          0x000000000800e4f4        0x0 debug/build/src/system/system.a(startup.o)
+
+.rel.dyn        0x000000000800e4f4        0x0
+ .rel.iplt      0x000000000800e4f4        0x0 debug/build/src/system/system.a(startup.o)
+
+.bss            0x0000000020000000      0x2f0
+                0x0000000020000040                . = (. + 0x40)
+ *fill*         0x0000000020000000       0x40 
+                0x0000000020000040                _stkirq_end = .
+                0x0000000020000040                _bss_start = .
+ *(.bss*)
+ .bss.cmd.4178  0x0000000020000040        0x1 debug/build/src/source/source.a(begin.o)
+                0x0000000020000044                . = ALIGN (0x4)
+ *fill*         0x0000000020000041        0x3 
+ *(COMMON*)
+ *fill*         0x0000000020000044        0x4 
+ COMMON         0x0000000020000048      0x2a0 debug/build/src/system/system.a(cpu.o)
+                0x0000000020000048                stackIdle
+                0x00000000200000a8                stackMain
+                0x00000000200002a8                kvarThread
+ COMMON         0x00000000200002e8        0x6 debug/build/src/source/source.a(begin.o)
+                0x00000000200002e8                tftId1
+                0x00000000200002ea                tftId3
+                0x00000000200002ec                tftId2
+                0x00000000200002f0                . = ALIGN (0x4)
+ *fill*         0x00000000200002ee        0x2 
+                0x00000000200002f0                _bss_end = .
+
+.data           0x00000000200002f0        0x0 load address 0x000000000800e4f4
+                0x00000000200002f0                _data_start = .
+ *(.data*)
+                0x00000000200002f0                . = ALIGN (0x4)
+                0x00000000200002f0                _data_end = .
+                0x00000000200002f0                _heap1_start = .
+                0x000000001000ff00                _heap1_end = 0x1000ff00
+
+.igot.plt       0x00000000200002f0        0x0
+ .igot.plt      0x00000000200002f0        0x0 debug/build/src/system/system.a(startup.o)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x7f
+ *(.comment)
+ .comment       0x0000000000000000       0x7f debug/build/src/system/system.a(cpu.o)
+                                         0x80 (size before relaxing)
+ .comment       0x000000000000007f       0x80 debug/build/src/source/source.a(begin.o)
+ .comment       0x000000000000007f       0x80 debug/build/src/source/source.a(gok.o)
+ .comment       0x000000000000007f       0x80 debug/build/src/driver/driver.a(r61509v.o)
+
+.ARM.attributes
+                0x0000000000000000       0x2f
+ .ARM.attributes
+                0x0000000000000000       0x21 debug/build/src/system/system.a(startup.o)
+ .ARM.attributes
+                0x0000000000000021       0x33 debug/build/src/system/system.a(cpu.o)
+ .ARM.attributes
+                0x0000000000000054       0x33 debug/build/src/source/source.a(begin.o)
+ .ARM.attributes
+                0x0000000000000087       0x33 debug/build/src/source/source.a(gok.o)
+ .ARM.attributes
+                0x00000000000000ba       0x33 debug/build/src/driver/driver.a(r61509v.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x158
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 debug/build/src/system/system.a(startup.o)
+ .debug_aranges
+                0x0000000000000020       0x38 debug/build/src/system/system.a(cpu.o)
+ .debug_aranges
+                0x0000000000000058       0x50 debug/build/src/source/source.a(begin.o)
+ .debug_aranges
+                0x00000000000000a8       0x18 debug/build/src/source/source.a(gok.o)
+ .debug_aranges
+                0x00000000000000c0       0x98 debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x17bc
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x26 debug/build/src/system/system.a(startup.o)
+ .debug_info    0x0000000000000026      0x609 debug/build/src/system/system.a(cpu.o)
+ .debug_info    0x000000000000062f      0x552 debug/build/src/source/source.a(begin.o)
+ .debug_info    0x0000000000000b81       0xc2 debug/build/src/source/source.a(gok.o)
+ .debug_info    0x0000000000000c43      0xb79 debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_abbrev   0x0000000000000000      0x63b
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 debug/build/src/system/system.a(startup.o)
+ .debug_abbrev  0x0000000000000014      0x16f debug/build/src/system/system.a(cpu.o)
+ .debug_abbrev  0x0000000000000183      0x1c1 debug/build/src/source/source.a(begin.o)
+ .debug_abbrev  0x0000000000000344       0x66 debug/build/src/source/source.a(gok.o)
+ .debug_abbrev  0x00000000000003aa      0x291 debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_line     0x0000000000000000      0x62f
+ *(.debug_line)
+ .debug_line    0x0000000000000000       0xff debug/build/src/system/system.a(startup.o)
+ .debug_line    0x00000000000000ff      0x101 debug/build/src/system/system.a(cpu.o)
+ .debug_line    0x0000000000000200      0x152 debug/build/src/source/source.a(begin.o)
+ .debug_line    0x0000000000000352       0x4e debug/build/src/source/source.a(gok.o)
+ .debug_line    0x00000000000003a0      0x28f debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_frame    0x0000000000000000      0x2b8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x50 debug/build/src/system/system.a(cpu.o)
+ .debug_frame   0x0000000000000050       0xac debug/build/src/source/source.a(begin.o)
+ .debug_frame   0x00000000000000fc      0x1bc debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_str      0x0000000000000000      0x520
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x4d debug/build/src/system/system.a(startup.o)
+ .debug_str     0x000000000000004d      0x319 debug/build/src/system/system.a(cpu.o)
+                                        0x35c (size before relaxing)
+ .debug_str     0x0000000000000366       0xc5 debug/build/src/source/source.a(begin.o)
+                                        0x220 (size before relaxing)
+ .debug_str     0x000000000000042b       0x11 debug/build/src/source/source.a(gok.o)
+                                        0x18d (size before relaxing)
+ .debug_str     0x000000000000043c       0xe4 debug/build/src/driver/driver.a(r61509v.o)
+                                        0x2b0 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x94b
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0xfe debug/build/src/system/system.a(cpu.o)
+ .debug_loc     0x00000000000000fe      0x125 debug/build/src/source/source.a(begin.o)
+ .debug_loc     0x0000000000000223      0x728 debug/build/src/driver/driver.a(r61509v.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+START GROUP
+LOAD debug/build/src/driver/driver.a
+LOAD debug/build/src/system/system.a
+LOAD debug/build/src/source/source.a
+END GROUP
+OUTPUT(debug/build/debug.elf elf32-littlearm)
+
+.debug_ranges   0x0000000000000000       0xf0
+ .debug_ranges  0x0000000000000000       0x28 debug/build/src/system/system.a(cpu.o)
+ .debug_ranges  0x0000000000000028       0x40 debug/build/src/source/source.a(begin.o)
+ .debug_ranges  0x0000000000000068       0x88 debug/build/src/driver/driver.a(r61509v.o)

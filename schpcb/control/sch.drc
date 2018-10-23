@@ -1,0 +1,235 @@
+Date and Time : 10/23/18 20:16:40
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+Checking Electrical Rules 
+
+Checking For Single Node Nets
+
+Checking For Unconnected Bus Nets
+
+Checking Off-Page Connections
+
+Checking Pin to Port Connections
+
+Reporting Off-Grid Objects
+
+Reporting Ports
+    M1nRST
+    M3DIR
+    485A
+    485B
+    M3nRST
+    M1A1
+    M1A2
+    M1B1
+    M1B2
+    M1nSLP
+    M3nSLP
+    M1M0
+    M1M1
+    M1M2
+    M1STEP
+    M3STEP
+    M2nFLT
+    M2A1
+    M2A2
+    M2B1
+    M2B2
+    M2M0
+    M2M1
+    M2M2
+    T1
+    T2
+    T3
+    RXD1
+    M3A1
+    M3A2
+    M3B1
+    M3B2
+    M3M0
+    M3M1
+    M3M2
+    AT1
+    AT2
+    AT3
+    M2DIR
+    TXD1
+    M2nRST
+    485DE
+    M2nSLP
+    M2STEP
+    M1nFLT
+    M3nFLT
+    M1DIR
+
+Reporting Off-Page Connections
+
+Reporting Globals
+    PO24V
+    HEATC
+    12V
+    MGND
+    P27V
+    SWDIO
+    P24V
+    M27V
+    AC24L
+    P2L
+    P1L
+    AC24N
+    M24V
+    PUMP1
+    PUMP
+    AC220G
+    UPUMP
+    PUMP2
+    UHEATL
+    HEATL
+    GND
+    ZERO
+    SWCLK
+    UHEATN
+    HEATN
+    27V
+    AC220L
+    PGND
+    AC220N
+    3V3
+    5V
+
+Reporting Net Names
+    PUMP2
+    GND
+    PUMP1
+    N946401
+    P1L
+    AC24N
+    N947130
+    N946461
+    N947803
+    P2L
+    N946293
+    AC24L
+    N947246
+    N947919
+    N946361
+    5V
+    AC220L
+    N947751
+    N947859
+    N947134
+    ZERO
+    M2STEP
+    M3M1
+    M1NSLP
+    HEATN
+    P27V
+    M2M2
+    27V
+    M3B1
+    M1M2
+    M3STEP
+    M3A1
+    MGND
+    AC220N
+    M2M1
+    UHEATN
+    M1B2
+    P24V
+    AT1
+    M1M1
+    T1
+    T2
+    M1NRST
+    M3M2
+    SWDIO
+    SWCLK
+    M1NFLT
+    M2A1
+    T3
+    3V3
+    M1DIR
+    AT3
+    M3NSLP
+    M2DIR
+    HEATL
+    UHEATL
+    M24V
+    PUMP
+    M2NSLP
+    M1A2
+    12V
+    M2M0
+    AT2
+    M1M0
+    UPUMP
+    HEATC
+    M3M0
+    PO24V
+    M3B2
+    M3A2
+    485DE
+    M2NRST
+    M1B1
+    M2A2
+    M2NFLT
+    M1STEP
+    M3NRST
+    485A
+    M1A1
+    485B
+    PGND
+    TXD1
+    M3DIR
+    M27V
+    M2B2
+    M3NFLT
+    AC220G
+    RXD1
+    M2B1
+    N931520
+
+Checking Misleading Tap connection
+
+INFO(ORCAP-2207): Check Bus width mismatch
+
+Checking Physical Rules 
+
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC1
+--------------------------------------------------
+
+INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
+
+Report for Invalid References
+
+Report for Duplicate References
+
+INFO(ORCAP-2209): Checking Visible Unconnected Power Pins
+
+--------------------------------------------------
+Checking Entire Design: SCH 
+--------------------------------------------------
+
+Checking Power Pin Visibility  
+
+Checking Normal Convert View Sync  
+INFO(ORCAP-36105): Checking Missing Pin Numbers  
+
+Checking Device with Zero pins  
+INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
+
+Checking Name Property for Hierarchical Instances  
+
+INFO(ORCAP-2211): Check High Speed Properties Syntax
+
+INFO(ORCAP-2212): Check Power Ground Mismatch
+
+Reporting Unused Refdes in multiple part packages
+Part	                       Quantity	                       Reference
+-----------------------------------------------------------------------------------------

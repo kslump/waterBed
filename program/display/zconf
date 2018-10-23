@@ -1,0 +1,10 @@
+builddir = debug
+buildtype = app
+
+incdir = inc
+libdir = lib
+srcdir = src/driver src/system src/source
+ldfile = lds/stm32f103xc.ld
+
+toolchain = /Users/Franky/Desktop/github/Tchain/cortexmr/bin/arm-none-eabi-
+cflags = -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections -gdwarf-2 -Os -std=gnu11 -fno-builtin -ffreestanding -nostdinc -pipe -Werror -Wall -Wextra -Wstrict-prototypes

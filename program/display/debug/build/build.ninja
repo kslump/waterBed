@@ -1,0 +1,53 @@
+ninja_required_version = 1.8
+builddir = debug/build
+toolchain = /Users/Franky/Desktop/github/Tchain/cortexmr/bin/arm-none-eabi-
+cflags = -mcpu=cortex-m3 -mthumb -ffunction-sections -fdata-sections -gdwarf-2 -Os -std=gnu11 -fno-builtin -ffreestanding -nostdinc -pipe -Werror -Wall -Wextra -Wstrict-prototypes -Iinc
+
+rule So
+  deps = gcc
+  depfile = $out.d
+  command = ${toolchain}gcc -MMD -MF $out.d $cflags -x assembler-with-cpp -o $out -c $in
+rule cs
+  deps = gcc
+  depfile = $out.d
+  command = ${toolchain}gcc -MMD -MF $out.d $cflags -o $out -S $in
+rule so
+  command = ${toolchain}gcc $cflags -o $out -c $in
+rule oa
+  command = ${toolchain}ar rcs $out $in
+rule ae
+  command = ${toolchain}ld -Bstatic --gc-sections -Map debug/build/debug.map -Tlds/stm32f103xc.ld -o $out --start-group $in --end-group
+rule axf
+  command = cp $in $out
+rule dis
+  command = ${toolchain}objdump -d $in > $out
+rule hex
+  command = ${toolchain}objcopy -O ihex $in $out
+rule bin
+  command = ${toolchain}objcopy -O binary $in $out
+rule sz
+  command = ${toolchain}size $in
+
+build $builddir/src/driver/font.s: cs src/driver/font.c
+build $builddir/src/driver/font.o: so $builddir/src/driver/font.s
+build $builddir/src/driver/r61509v.s: cs src/driver/r61509v.c
+build $builddir/src/driver/r61509v.o: so $builddir/src/driver/r61509v.s
+build $builddir/src/driver/driver.a: oa $builddir/src/driver/font.o $builddir/src/driver/r61509v.o
+
+build $builddir/src/system/cpu.s: cs src/system/cpu.c
+build $builddir/src/system/cpu.o: so $builddir/src/system/cpu.s
+build $builddir/src/system/startup.o: So src/system/startup.s
+build $builddir/src/system/system.a: oa $builddir/src/system/cpu.o $builddir/src/system/startup.o
+
+build $builddir/src/source/begin.s: cs src/source/begin.c
+build $builddir/src/source/begin.o: so $builddir/src/source/begin.s
+build $builddir/src/source/gok.s: cs src/source/gok.c
+build $builddir/src/source/gok.o: so $builddir/src/source/gok.s
+build $builddir/src/source/source.a: oa $builddir/src/source/begin.o $builddir/src/source/gok.o
+
+build $builddir/debug.elf: ae $builddir/src/driver/driver.a $builddir/src/system/system.a $builddir/src/source/source.a
+build $builddir/debug.axf: axf $builddir/debug.elf
+build $builddir/debug.dis: dis $builddir/debug.elf
+build $builddir/debug.hex: hex $builddir/debug.elf
+build $builddir/debug.bin: bin $builddir/debug.elf
+build dummy: sz $builddir/debug.elf

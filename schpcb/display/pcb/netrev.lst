@@ -1,0 +1,79 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : pcb.brd                                       )
+(    Software Version : 16.6-2015S108                                 )
+(    Date/Time        : Tue Oct 23 20:22:50 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  Yes
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'D:/github/WaterBed/schpcb/display/allegro'
+Design Directory:            'D:/github/WaterBed/schpcb/display/pcb'
+Old design name:             'D:/github/WaterBed/schpcb/display/pcb/pcb.brd'
+New design name:             'D:/github/WaterBed/schpcb/display/pcb/pcb.brd'
+
+CmdLine: netrev -$ -i D:/github/WaterBed/schpcb/display/allegro -x -y 1 -q netrev_constraint_report.xml D:/github/WaterBed/schpcb/display/pcb/#Taaaaab02940.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read D:/github/WaterBed/schpcb/display/allegro/pstchip.dat 
+   Finished reading D:/github/WaterBed/schpcb/display/allegro/pstchip.dat (00:00:00.02)
+Starting to read D:/github/WaterBed/schpcb/display/allegro/pstxprt.dat 
+   Finished reading D:/github/WaterBed/schpcb/display/allegro/pstxprt.dat (00:00:00.00)
+Starting to read D:/github/WaterBed/schpcb/display/allegro/pstxnet.dat 
+   Finished reading D:/github/WaterBed/schpcb/display/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/SPB_16.6/share/local/pcb/modules 
+
+PSMPATH =  D:/winprj/orcad/footprint/pcblib/ 
+           D:/winprj/orcad/footprint/hole/ 
+
+PADPATH =  D:/winprj/orcad/footprint/padstack/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Oct 23 20:22:50 2018
+   DESIGN NAME : 'SCH'
+   PACKAGING ON Feb 15 2016 19:53:59
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:00:43
+elapsed time  0:00:00
+

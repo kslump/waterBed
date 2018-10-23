@@ -1,0 +1,13 @@
+{ Using PSTWRITER 16.6.0 d001Oct-23-2018 at 20:17:03 }
+
+#1 WARNING(ORCAP-36006): Part Name "MDRV8825_DIP254P1340_16_MDRV8825" is renamed to "MDRV8825_DIP254P1340_16_MDRV882".
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... D:\GITHUB\WATERBED\SCHPCB\CONTROL\ALLEGRO/pstchip.dat
+
+Loading... D:\GITHUB\WATERBED\SCHPCB\CONTROL\ALLEGRO/pstchip.dat
+
+Loading... D:\GITHUB\WATERBED\SCHPCB\CONTROL\ALLEGRO/pstxprt.dat
+
+Loading... D:\GITHUB\WATERBED\SCHPCB\CONTROL\ALLEGRO/pstxnet.dat
+packaging the design view...

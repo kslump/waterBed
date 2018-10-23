@@ -1,0 +1,18 @@
+\t (00:00:01) allegro 16.6-2015 S108 (v16-6-112HV) Windows 32
+\t (00:00:01)     Journal start - Tue Oct 23 20:22:26 2018
+\t (00:00:01)         Host=WIN7VM User=Administrator Pid=2940 CPUs=1
+\t (00:00:01) CmdLine= C:\Cadence\SPB_16.6\tools\pcb\bin\allegro.exe -ORCAD
+\t (00:00:01) 
+\t (00:00:03) Starting new design...
+\i (00:00:03) trapsize 906
+\i (00:00:03) trapsize 883
+\i (00:00:03) trapsize 910
+\i (00:00:04) trapsize 882
+\i (00:00:04) trapsize 1192
+\i (00:00:04) generaledit 
+\i (00:00:05) open 
+\i (00:00:10) fillin "D:\github\WaterBed\schpcb\display\pcb\pcb.brd"
+\i (00:00:10) cd "D:\github\WaterBed\schpcb\display\pcb"
+\t (00:00:10) Opening existing design...
+\i (00:00:10) trapsize 588
+\t (00:00:10)     Journal end - Tue Oct 23 20:22:36 2018
